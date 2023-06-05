@@ -19,7 +19,7 @@ const ATCDashboard = () => {
 
   return (
     <div id="dashboard-container">
-      <Navbar />
+      <Navbar title="ATC" />
       <div id="dashboard-title-container">
         <p id="dashboard-title">PO's under you</p>
         <p id="dashboard-subtitle">Below is the list of PO's assigned to you</p>

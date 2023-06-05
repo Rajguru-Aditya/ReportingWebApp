@@ -27,7 +27,7 @@ const PODashboard = () => {
 
   return (
     <div id="dashboard-container">
-      <Navbar />
+      <Navbar title="PO" />
       <div id="dashboard-title-container">
         <p id="dashboard-title">Schools under you</p>
         <p id="dashboard-subtitle">

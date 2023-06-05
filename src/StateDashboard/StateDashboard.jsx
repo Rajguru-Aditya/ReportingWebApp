@@ -27,7 +27,7 @@ const StateDashboard = () => {
 
   return (
     <div id="dashboard-container">
-      <Navbar />
+      <Navbar title="State" />
       <div id="dashboard-title-container">
         <p id="dashboard-title">ATCs under you</p>
         <p id="dashboard-subtitle">Below is the list of ATCs assigned to you</p>
