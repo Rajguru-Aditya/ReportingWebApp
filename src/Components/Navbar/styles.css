@@ -5,9 +5,10 @@
   gap: 2rem;
   height: 10vh;
   width: 100%;
-  background-color: transparent;
+  background-color: #eff5f5;
   color: #000;
   padding: 0 2rem;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   z-index: 1;

@@ -1,0 +1,97 @@
+#school-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#school-dashboard-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  color: #000;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+#school-dashboard-header-title-back {
+  height: 20px;
+  width: 20px;
+}
+
+#school-dashboard-header-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#school-dashboard-header-title-data {
+  position: absolute;
+  right: 2rem;
+}
+
+#school-dashboard-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+#school-dashboard-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#school-dashboard-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+#school-dashboard-items-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#school-dashboard-items-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 30% !important;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#school-dashboard-item-list-item-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#school-dashboard-items-list-item-title {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}

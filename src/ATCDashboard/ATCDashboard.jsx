@@ -3,23 +3,15 @@ import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 
-const StateDashboard = () => {
-  const ATCList = [
+const ATCDashboard = () => {
+  const POSList = [
     {
-      name: "Nagpur",
-      pos: 1,
+      name: "Nagpur 1",
+      schools: 1,
     },
     {
-      name: "Thane",
-      pos: 2,
-    },
-    {
-      name: "Amravati",
-      pos: 2,
-    },
-    {
-      name: "Nashik",
-      pos: 1,
+      name: "Nagpur 2",
+      schools: 2,
     },
   ];
 
@@ -29,26 +21,26 @@ const StateDashboard = () => {
     <div id="dashboard-container">
       <Navbar />
       <div id="dashboard-title-container">
-        <p id="dashboard-title">ATCs under you</p>
-        <p id="dashboard-subtitle">Below is the list of ATCs assigned to you</p>
+        <p id="dashboard-title">PO's under you</p>
+        <p id="dashboard-subtitle">Below is the list of PO's assigned to you</p>
       </div>
       <div id="dashboard-content-list-container">
         <div id="dashboard-content-list">
-          {ATCList.map((atc, index) => (
+          {POSList.map((po, index) => (
             <div
               id="dashboard-content-list-item"
               key={index}
               onClick={() => {
-                navigate("/atc");
+                navigate("/atc/po");
               }}
             >
               <div id="dashboard-content-list-item-number-container">
                 <p id="dashboard-content-list-item-number">{index + 1}</p>
               </div>
               <div id="dashboard-content-list-item-text-container">
-                <p id="dashboard-content-list-item-title">{atc.name}</p>
+                <p id="dashboard-content-list-item-title">{po.name}</p>
                 <p id="dashboard-content-list-item-subtitle">
-                  No.of POs :- {atc.pos}
+                  No.of Schools :- {po.schools}
                 </p>
               </div>
             </div>
@@ -59,4 +51,4 @@ const StateDashboard = () => {
   );
 };
 
-export default StateDashboard;
+export default ATCDashboard;

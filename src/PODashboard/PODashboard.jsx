@@ -3,23 +3,23 @@ import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 
-const StateDashboard = () => {
-  const ATCList = [
+const PODashboard = () => {
+  const SchoolList = [
     {
-      name: "Nagpur",
-      pos: 1,
+      name: "Boripada",
+      students: 221,
     },
     {
-      name: "Thane",
-      pos: 2,
+      name: "Rayate",
+      students: 233,
     },
     {
-      name: "Amravati",
-      pos: 2,
+      name: "Tanapada",
+      students: 250,
     },
     {
-      name: "Nashik",
-      pos: 1,
+      name: "Torangan",
+      students: 190,
     },
   ];
 
@@ -29,26 +29,28 @@ const StateDashboard = () => {
     <div id="dashboard-container">
       <Navbar />
       <div id="dashboard-title-container">
-        <p id="dashboard-title">ATCs under you</p>
-        <p id="dashboard-subtitle">Below is the list of ATCs assigned to you</p>
+        <p id="dashboard-title">Schools under you</p>
+        <p id="dashboard-subtitle">
+          Below is the list of Schools assigned to you
+        </p>
       </div>
       <div id="dashboard-content-list-container">
         <div id="dashboard-content-list">
-          {ATCList.map((atc, index) => (
+          {SchoolList.map((school, index) => (
             <div
               id="dashboard-content-list-item"
               key={index}
               onClick={() => {
-                navigate("/atc");
+                navigate(`/atc/po/school/${school.name}`);
               }}
             >
               <div id="dashboard-content-list-item-number-container">
                 <p id="dashboard-content-list-item-number">{index + 1}</p>
               </div>
               <div id="dashboard-content-list-item-text-container">
-                <p id="dashboard-content-list-item-title">{atc.name}</p>
+                <p id="dashboard-content-list-item-title">{school.name}</p>
                 <p id="dashboard-content-list-item-subtitle">
-                  No.of POs :- {atc.pos}
+                  No.of Students :- {school.students}
                 </p>
               </div>
             </div>
@@ -59,4 +61,4 @@ const StateDashboard = () => {
   );
 };
 
-export default StateDashboard;
+export default PODashboard;
