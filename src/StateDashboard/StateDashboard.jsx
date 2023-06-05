@@ -39,7 +39,7 @@ const StateDashboard = () => {
               id="dashboard-content-list-item"
               key={index}
               onClick={() => {
-                navigate("/atc");
+                navigate("/dashboard/atc");
               }}
             >
               <div id="dashboard-content-list-item-number-container">

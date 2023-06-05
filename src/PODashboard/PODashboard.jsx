@@ -41,7 +41,7 @@ const PODashboard = () => {
               id="dashboard-content-list-item"
               key={index}
               onClick={() => {
-                navigate(`/atc/po/school/${school.name}`);
+                navigate(`/dashboard/atc/po/school/${school.name}`);
               }}
             >
               <div id="dashboard-content-list-item-number-container">

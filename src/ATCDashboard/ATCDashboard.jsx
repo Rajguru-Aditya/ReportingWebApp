@@ -31,7 +31,7 @@ const ATCDashboard = () => {
               id="dashboard-content-list-item"
               key={index}
               onClick={() => {
-                navigate("/atc/po");
+                navigate("/dashboard/atc/po");
               }}
             >
               <div id="dashboard-content-list-item-number-container">
